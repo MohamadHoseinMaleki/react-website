@@ -1,26 +1,30 @@
-// import logo from './logo.svg';
-import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import Registration from './Registration';
-import  Login  from './Login.jsx';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginForm from "./components/LoginForm";
+import Dashboard from "./components/Dashboard";
+import RegitrationForm from "./components/RegistrationForm";
+import { Helmet } from "react-helmet";
 
-const App =()=> {
-
-const [currentform,setCurrentForm]=useState('login');
-const [showPassword, setShowPassword] = useState(false);
-const root = createRoot(document.getElementById("root"));
-
-const togglePasswordVisibility = () => {
-  setShowPassword(!showPassword);
-};
-
+function App() {
   return (
-    <div className="App">
-      <Login>login</Login>
-    </div>
+    <>
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </Helmet>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginForm />} exact />
+          <Route path="/dashboard" element={<Dashboard />} exact />
+          <Route path="/RegitrationPage" element={<RegitrationForm />} />
+          
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
- export default App;
+export default App;

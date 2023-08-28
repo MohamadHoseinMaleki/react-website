@@ -1,0 +1,78 @@
+import React from "react";
+
+const data = [
+  {
+    id: 1,
+    userNumber: "user123",
+    devices: ["Device A"],
+    subscriptionType: "Premium",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-01-01",
+    subscriptionEnd: "2022-12-31",
+  },
+  {
+    id: 2,
+    userNumber: "user456",
+    devices: ["Device B"],
+    subscriptionType: "Basic",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-02-15",
+    subscriptionEnd: "2022-08-14",
+  },
+  {
+    id: 3,
+    userNumber: "user789",
+    devices: ["Device C"],
+    subscriptionType: "Premium",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-03-01",
+    subscriptionEnd: "2023-02-28",
+  },
+  {
+    id: 4,
+    userNumber: "user321",
+    devices: ["Device D"],
+    subscriptionType: "Basic",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-04-01",
+    subscriptionEnd: "2022-10-01",
+  },
+  {
+    id: 5,
+    userNumber: "user654",
+    devices: ["Device E"],
+    subscriptionType: "Premium",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-05-01",
+    subscriptionEnd: "2023-04-30",
+  },
+  {
+    id: 6,
+    userNumber: "user77",
+    devices: ["Device H"],
+    subscriptionType: "Premium",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-05-01",
+    subscriptionEnd: "2023-04-30",
+  },
+  {
+    id: 7,
+    userNumber: "user888",
+    devices: ["Device D"],
+    subscriptionType: "Premium",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-05-01",
+    subscriptionEnd: "2023-04-30",
+  },
+  {
+    id: 8,
+    userNumber: "user654",
+    devices: ["Device E"],
+    subscriptionType: "Premium",
+    subscriptionDate: "2022-01-01",
+    subscriptionStart: "2022-05-01",
+    subscriptionEnd: "2023-04-30",
+  },
+];
+
+export default data;
